@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    fieldset {
+      border: 2px solid red;
+      width: 300px;
+    }
+    legend {
+      text-align: center;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input_types</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <!-- The <input type="color"> is used for input fields that should contain a color -->
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor" />
+      </div>
+      <fieldset>
+        <legend>Input type date</legend>
+        <div>
+          <!-- The <input type="date"> is used for input fields that should contain a date -->
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday" />
+        </div>
+
+        <!-- use the min and max attributes to add restrictions to dates -->
+        <div>
+          <label for="datemax">Enter a date before 2000-01-01:</label>
+          <input type="date" id="datemax" name="datemax" max="1999-12-31" />
+        </div>
+        <div>
+          <label for="datemin">Enter a date after 2010-01-01:</label>
+          <input type="date" id="datemin" name="datemin" min="2010-01-02" />
+        </div>
+        <div>
+          <!-- The <input type="datetime-local"> specifies a date and time input field, with no time zone -->
+          <label for="birthdaytime">Birthday (date and time):</label>
+          <input type="datetime-local" id="birthdaytime" name="birthdaytime" />
+        </div>
+        <div>
+          <!-- The <input type="month"> allows the user to select a month and year -->
+          <label for="bdaymonth">Birthday (month and year):</label>
+          <input type="month" id="bdaymonth" name="bdaymonth" />
+        </div>
+        <div>
+          <!-- The <input type="time"> allows the user to select a time (no time zone) -->
+          <label for="appt">Select a time:</label>
+          <input type="time" id="appt" name="appt" />
+        </div>
+        <div>
+          <!-- The <input type="week"> allows the user to select a week and year -->
+          <label for="week">Select a week:</label>
+          <input type="week" id="week" name="week" />
+        </div>
+      </fieldset>
+      <!-- The <input type="image"> defines an image as a submit button -->
+      <input
+        type="image"
+        src="img_submit.gif"
+        alt="Submit"
+        width="48"
+        height="48"
+      />
+      <div>
+        <!-- The <input type="file"> defines a file-select field and a "Browse" button for file uploads -->
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile" />
+      </div>
+      <div>
+        <!-- The <input type="hidden"> defines a hidden input field (not visible to a user) -->
+        <label for="firstname">First name:</label>
+        <input type="text" id="firstname" name="fname" /><br /><br />
+        <input type="hidden" id="custId" name="custId" value="3487" />
+        <input type="submit" value="Submit" />
+      </div>
+      <div>
+        <!-- The <input type="number"> defines a numeric input field -->
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5" />
+      </div>
+      <div>
+        <!-- The <input type="range"> defines a control for entering a number whose exact value is not important (like a slider control). Default range is 0 to 100. However, you can set restrictions on what numbers are accepted with the min, max, and step attributes -->
+        <label for="vol">Volume (between 0 and 50):</label>
+        <input type="range" id="vol" name="vol" min="0" max="50" />
+      </div>
+      <div>
+        <!-- The <input type="search"> is used for search fields (a search field behaves like a regular text field) -->
+        <label for="gsearch">Search Google:</label>
+        <input type="search" id="gsearch" name="gsearch" />
+      </div>
+      <div>
+        <!-- The <input type="url"> is used for input fields that should contain a URL address -->
+        <label for="homepage">Add your homepage:</label>
+        <input type="url" id="homepage" name="homepage" />
+      </div>
+    </form>
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>input type reset</legend>
+        <!-- <input type="reset"> defines a reset button that will reset all form values to their default values -->
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="John" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>
