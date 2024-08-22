@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 916px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+.planet {
+  width: fit-content;
+}
+.planet.center-image {
+  margin: 0 auto;
+}
+.planet.right-image {
+  margin-left: 439px;
+}
+#earth {
+  margin-left: 473px;
+}
+.planet.left-image {
+  margin-left: 25px;
+}
+h2 {
+  font-size: 32px;
+}
+p {
+  font-size: 16px;
+  margin-left: 25px;
+  margin-right: 23px;
+}
+.text-right {
+  text-align: right;
+  margin-right: 23px;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  margin-left: 25px;
+}
+.p-center {
+  text-align: center;
+}
+a.target-link .bnt-top {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+span {
+  color: rgb(246, 238, 6);
+  background-color: #0d0d66;
+}
+span:hover {
+  color: #fff;
+  background-color: #000;
+}
+a {
+  display: inline-block;
+  width: fit-content;
+  transition: transform 0.2s;
+}
+a:visited {
+  color: rgb(0 160 98);
+}
+a:hover {
+  background-color: rgb(218 210 242 / 72%);
+  color: rgb(255 4 4);
+  transform: scale(1.5);
+}
+.sun:hover {
+  background-color: rgb(0 0 0 / 72%);
+  color: #d3f10c;
+  transform: scale(1.5);
+}
+a.target-link:hover {
+  transform: scale(1.5);
+  background-color: transparent;
+}
