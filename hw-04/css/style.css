@@ -4,6 +4,9 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #ffeeee;
 }
 * {
   box-sizing: border-box;
@@ -11,51 +14,33 @@ body {
 .container {
   width: 916px;
   margin: 0 auto;
+  padding: 18px 23px 18px 25px;
+  background-color: rgb(255, 255, 255);
 }
 h1 {
   font-size: 40px;
   text-align: center;
 }
 .planet {
-  width: fit-content;
+  width: 868px;
+  display: inline-flex;
+  flex-direction: row;
 }
 .planet.center-image {
-  margin: 0 auto;
+  justify-content: center;
 }
 .planet.right-image {
-  margin-left: 439px;
-}
-#earth {
-  margin-left: 473px;
-}
-.planet.left-image {
-  margin-left: 25px;
+  justify-content: flex-end;
 }
 h2 {
   font-size: 32px;
 }
-p {
-  font-size: 16px;
-  margin-left: 25px;
-  margin-right: 23px;
-}
 .text-right {
   text-align: right;
-  margin-right: 23px;
 }
-.text-center {
-  text-align: center;
-}
-.text-left {
-  margin-left: 25px;
-}
+.text-center,
 .p-center {
   text-align: center;
-}
-a.target-link .bnt-top {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
 }
 span {
   color: rgb(246, 238, 6);
@@ -64,6 +49,15 @@ span {
 span:hover {
   color: #fff;
   background-color: #000;
+}
+a.target-link {
+  display: block;
+  width: fit-content;
+  margin: 10px auto 0px;
+}
+a.target-link:hover {
+  transform: scale(1.5);
+  background-color: transparent;
 }
 a {
   display: inline-block;
@@ -78,12 +72,8 @@ a:hover {
   color: rgb(255 4 4);
   transform: scale(1.5);
 }
-.sun:hover {
+#sun:hover {
   background-color: rgb(0 0 0 / 72%);
   color: #d3f10c;
   transform: scale(1.5);
-}
-a.target-link:hover {
-  transform: scale(1.5);
-  background-color: transparent;
 }
