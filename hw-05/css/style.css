@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e5e5e5;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 1568px;
+  height: 1438px;
+  margin: auto;
+  position: relative;
+  /* border: 2px solid black; */
+}
+.black-square {
+  width: 512px;
+  height: 512px;
+  position: absolute;
+  top: 68px;
+  left: 87px;
+  background-color: rgb(0, 0, 0);
+}
+.text {
+  display: block;
+  position: absolute;
+  width: 310px;
+  height: 182px;
+  top: 129px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.flag {
+  display: block;
+  position: absolute;
+  width: 80px;
+  height: 60px;
+  bottom: 109px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.speechify-square {
+  width: 512px;
+  height: 512px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* top:50%; 
+  left:50%; 
+  transform:translate(-50%, -50%); - variant 2*/
+  z-index: 1;
+  background-color: rgb(255, 206, 34);
+}
+.glyph-square {
+  display: block;
+  position: absolute;
+  width: 400px;
+  height: 228px;
+  top: 144px;
+  left: 55px;
+}
+.speechify-circle {
+  width: 512px;
+  height: 512px;
+  position: absolute;
+  right: 113px;
+  bottom: 47px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 0px #2137fc80, 0px -4px 0px #2137fc80;
+}
+.circle-container {
+  width: 444px;
+  height: 444px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-sizing: content-box;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.yellow-semicircle {
+  width: 444px;
+  height: 444px;
+  background-color: rgb(255, 206, 34);
+  position: absolute;
+  z-index: 2;
+}
+.blue-semicircle img {
+  display: block;
+  width: 444px;
+  height: 234px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.glyph-circle img {
+  display: block;
+  position: absolute;
+  width: 359px;
+  height: 204px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 28px;
+  z-index: 4;
+}
