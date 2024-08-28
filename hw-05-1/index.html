@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="img/x-icon" href="img/food.png" />
+    <title>Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="#"> <img src="img/menu-icon.png" alt="menu-icon" /></a>
+              <ul>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Drinks</a></li>
+                <li><a href="#">Desserts</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="section">
+        <div class="menu-block">
+          <h1>Menu</h1>
+          <div class="food-search">
+            <label for="inpsearch"></label>
+            <input
+              type="search"
+              id="inpsearch"
+              name="inpsearch"
+              placeholder="Search food here"
+            />
+          </div>
+        </div>
+        <div class="menu-catalog">
+          <div class="food-wrapper">
+            <a href="#"
+              ><div class="frame active">
+                <img src="img/food.png" alt="food" />
+              </div>
+              <p>Food</p></a
+            >
+          </div>
+          <div class="food-wrapper">
+            <a href="#"
+              ><div class="frame">
+                <img src="img/tropical-drink.png" alt="tropical-drink" />
+              </div>
+              <p>Drinks</p></a
+            >
+          </div>
+          <div class="food-wrapper">
+            <a href="#"
+              ><div class="frame">
+                <img src="img/ice-cream.png" alt="ice-cream" />
+              </div>
+              <p>Dessert</p></a
+            >
+          </div>
+        </div>
+        <h2>Burger</h2>
+        <div class="food-catalog">
+          <div class="burger-wrapper">
+            <div class="burger-frame">
+              <a href="#"> <img src="img/big-mac.png" alt="big-mac" /></a>
+            </div>
+            <div class="burger-text">
+              <a href="#">
+                <p class="burger-name">Big Mac</p>
+                <p class="burger-weight">Rs 240</p></a
+              >
+            </div>
+          </div>
+          <div class="burger-wrapper">
+            <div class="burger-frame">
+              <a href="#"> <img src="img/kfc-double.png" alt="kfc-double" /></a>
+            </div>
+            <div class="burger-text">
+              <a href="#">
+                <p class="burger-name">KFC Double</p>
+                <p class="burger-weight">Rs 252</p></a
+              >
+            </div>
+          </div>
+          <div class="burger-wrapper">
+            <div class="burger-frame">
+              <a href="#">
+                <img src="img/fish-burger.png" alt="fish-burger"
+              /></a>
+            </div>
+            <div class="burger-text">
+              <a href="#">
+                <p class="burger-name">Fish Burger</p>
+                <p class="burger-weight">Rs 220</p></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
