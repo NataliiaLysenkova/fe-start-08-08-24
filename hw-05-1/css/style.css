@@ -11,7 +11,6 @@ body {
 }
 .container {
   width: 360px;
-  min-height: 800px;
   margin: auto;
   padding: 20px 20px 20px 24px;
   display: block;
