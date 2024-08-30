@@ -71,7 +71,9 @@ body {
   right: 113px;
   bottom: 47px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 4px 0px #2137fc80, 0px -4px 0px #2137fc80;
+  border-bottom: 2px solid rgb(33, 55, 252);
+  border-top: 2px solid rgb(33, 55, 252);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .circle-container {
   width: 444px;
@@ -110,6 +112,6 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-  bottom: 28px;
+  bottom: 29px;
   z-index: 4;
 }
