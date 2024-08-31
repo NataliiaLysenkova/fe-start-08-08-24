@@ -73,7 +73,6 @@ h1 {
   padding: 15px;
   border: none;
   border-radius: 12px;
-  opacity: 0.6;
   background-color: rgb(239, 239, 239);
 }
 .food-search input:focus {
@@ -81,7 +80,7 @@ h1 {
   outline: #2137fc80;
 }
 input::placeholder {
-  color: rgb(0, 0, 0);
+  color: rgb(153, 153, 153);
   font-size: 12px;
 }
 .menu-catalog {
@@ -103,14 +102,13 @@ input::placeholder {
   background-color: rgb(239, 239, 239);
   transition: all 1s;
 }
-.frame:hover {
+.food-wrapper:hover .frame {
   background-color: rgb(234, 226, 183);
 }
 .frame.active {
   background-color: rgb(234, 226, 183);
 }
 .frame img {
-  opacity: 0.6;
   width: fit-content;
   position: absolute;
   top: 50%;
@@ -121,21 +119,26 @@ input::placeholder {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
+  opacity: 0.4;
 }
 .food-wrapper > a {
   text-decoration: none;
   color: rgb(0, 0, 0);
-  opacity: 0.6;
+  opacity: 0.7;
 }
-.food-wrapper:hover > a,
-.frame:hover img,
-.food-search:hover input {
+.food-wrapper:first-child a,
+.food-wrapper:first-child p {
+  opacity: 1;
+}
+.food-wrapper:hover a,
+.food-wrapper:hover p {
   opacity: 1;
 }
 h2 {
   margin-top: 32px;
   font-weight: 500;
   font-size: 20px;
+  color: rgb(0, 48, 73);
 }
 .food-catalog {
   width: 316px;
@@ -151,24 +154,28 @@ h2 {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  padding: 16px;
+  padding: 0 15px;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 10px;
 }
 .burger-frame {
-  display: inline-block;
+  flex-basis: 27%;
+}
+.burger-wrapper:nth-child(3) .burger-frame {
+  flex-basis: 29%;
+  margin-left: -5px;
+}
+.burger-wrapper:nth-child(2) .burger-frame {
   padding-top: 5px;
-  flex-basis: 25%;
 }
 .burger-frame:hover {
   transform: scale(1.5);
 }
-.burger-frame img {
-  width: 70px;
-  height: 70px;
+.burger-wrapper:nth-child(3) .burger-frame img,
+.burger-wrapper:nth-child(3) .burger-text {
+  margin-top: 18px;
 }
 .burger-text {
-  display: inline-block;
-  margin-right: 62px;
   flex-basis: 35%;
 }
 .burger-text > a {
