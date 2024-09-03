@@ -1,0 +1,245 @@
+@font-face {
+  font-weight: 500;
+  font-family: KyivTypeTitling;
+  src: url("fonts/TTF/KyivTypeSans-Medium-.ttf");
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  background-image: url("img/bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+.container {
+  min-height: 100vh;
+  max-width: 100%;
+  padding-top: 2%;
+  padding-left: 3%;
+  /* padding-left: 40px; */
+}
+.header {
+  height: 10vh;
+  /* height: 70px; */
+  display: flex;
+  justify-content: space-between;
+}
+.logo-wrapper {
+  width: 22%;
+}
+.logo-wrapper p {
+  font-weight: 500;
+  font-family: KyivTypeTitling;
+  color: rgb(200, 200, 200);
+}
+.logo-wrapper p::before {
+  content: "|";
+  font-family: "Inter", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  padding-right: 15px;
+}
+.logo-wrapper,
+.icons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.h-logo img {
+  width: 100%;
+  height: 100%;
+}
+.h-logo {
+  width: 40%;
+  height: 60%;
+}
+.avatar img,
+.search img {
+  width: 100%;
+  height: 100%;
+}
+.search {
+  width: 50%;
+  height: 55%;
+}
+.avatar {
+  width: 60%;
+  height: 100%;
+}
+.icons-wrapper {
+  column-gap: 25px;
+  padding-right: 30px;
+}
+.m-content {
+  width: 50%;
+  height: 90vh;
+  position: absolute;
+  bottom: 0;
+  padding-top: 6%;
+}
+h3 {
+  font-weight: 500;
+  margin-top: 0;
+}
+.subheading span {
+  padding: 0 15px;
+}
+h1 {
+  font-size: 2em;
+  font-weight: 800;
+  letter-spacing: 0.3rem;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+h4 {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+h4 span {
+  color: rgb(167, 166, 166);
+  text-transform: none;
+}
+.d-heading {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.d-heading h4:not(:last-child) {
+  text-transform: uppercase;
+}
+.description p {
+  color: rgb(167, 166, 166);
+  margin-top: 0;
+}
+.star-wrapper {
+  width: 25%;
+  height: 5vh;
+  display: inline-flex;
+  column-gap: 0.2rem;
+  padding: 1% 0;
+}
+.star-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.links-wrapper {
+  width: 80%;
+  display: flex;
+  column-gap: 5rem;
+  padding: 2% 0;
+}
+.links-wrapper .b-link:first-child {
+  background: rgb(213, 13, 31);
+  border-color: transparent;
+}
+.b-link {
+  width: 35%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem 0.7rem;
+  background: none;
+  border-radius: 10px;
+  border-color: rgb(255, 255, 255);
+}
+.b-link a {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.circle {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+}
+.triangle {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-style: solid;
+  border-width: 5px 0 5px 10px;
+  border-color: transparent transparent transparent rgb(213, 13, 31);
+  transform: rotate(0deg);
+}
+.m-heading {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.c-wrapper {
+  width: 12%;
+  display: flex;
+  justify-content: space-between;
+}
+.controls {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid;
+  border-color: rgb(255, 255, 255);
+  background: transparent;
+  opacity: 0.5;
+}
+.controls.active,
+.controls:hover {
+  opacity: 1;
+}
+.fa-solid.fa-chevron-left,
+.fa-solid.fa-chevron-right {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.m-wrapper {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  column-gap: 3rem;
+}
+.poster img {
+  width: 100%;
+  height: 100%;
+}
+.rating {
+  width: 7%;
+  height: 5vh;
+  position: fixed;
+  bottom: 20%;
+  right: 0;
+  background: rgba(255, 255, 255, 0.49);
+}
+.red {
+  width: 15%;
+  height: 5vh;
+  position: absolute;
+  background: rgb(213, 13, 31);
+}
+.rating p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
