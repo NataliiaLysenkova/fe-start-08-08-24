@@ -116,7 +116,7 @@ input[type="submit"]:focus {
 .sctn-second p,
 .sctn-third p {
   margin: 0;
-  width: 37%;
+  width: 50%;
   line-height: 1.5;
   font-size: 1.438vw;
   text-align: center;
