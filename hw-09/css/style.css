@@ -1,0 +1,205 @@
+:root {
+  --text-color: rgb(255, 255, 255);
+  --link-Color: rgb(255, 183, 66);
+  --MainBackground: rgb(33, 37, 41);
+  --main-font-size: 16px;
+  --font-family: "Inter", sans-serif;
+  --font-weight: 400;
+  --nav-font-family: "Poppins", sans-serif;
+  --nav-font-weight: 600;
+  --nav-font-size: 1.563rem;
+  --button-font-weight: 700;
+}
+html {
+  font-size: var(--main-font-size);
+}
+body {
+  background-color: var(--MainBackground);
+  font-family: var(--font-family);
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 100%;
+  padding: 1.063rem 3rem 0 3.125rem;
+  border: 1px solid rgb(255, 255, 255);
+}
+.h-content {
+  display: flex;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  align-items: center;
+  column-gap: 1.563rem;
+}
+a {
+  text-decoration: none;
+}
+nav a {
+  font-family: var(--nav-font-family);
+  font-weight: var(--nav-font-weight);
+  font-size: var(--nav-font-size);
+  color: var(--text-color);
+}
+nav a:hover {
+  color: rgb(255, 183, 66);
+}
+button {
+  padding: 0.75rem 1.625rem 0.75rem 1.625rem;
+  border-radius: 3.125rem;
+  background: var(--link-Color);
+  font-family: var(--nav-font-family);
+  font-weight: var(--button-font-weight);
+  font-size: var(--nav-font-size);
+  color: var(--MainBackground);
+}
+@media (max-width: 880px) {
+  .h-content {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.65rem;
+  }
+  .achievements {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.65rem;
+  }
+}
+@media (max-width: 580px) {
+  nav {
+    flex-direction: column;
+    row-gap: 0.313rem;
+  }
+}
+.author {
+  padding-top: 6.75rem;
+  padding-bottom: 8.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.author h1 {
+  font-size: 3rem;
+  padding-top: 1.875rem;
+  padding-bottom: 3.75rem;
+}
+.author h1,
+.author h2 {
+  font-family: var(--font-family);
+  font-weight: var(--button-font-weight);
+  color: var(--text-color);
+}
+.author h2 {
+  font-size: 2rem;
+}
+.author h2 a {
+  color: var(--link-Color);
+  text-decoration: underline;
+}
+.author p {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-size: 1.5rem;
+  color: var(--text-color);
+  padding-bottom: 3.125rem;
+}
+.achievements {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1.5rem;
+  padding-left: 1.375rem;
+}
+@media (max-width: 1260px) {
+  .achievements {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.65rem;
+  }
+}
+.a-wrapper {
+  padding: 1.75rem 1.875rem 1.75rem 1.875rem;
+  background: rgb(41, 43, 46);
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  column-gap: 3.5rem;
+}
+.a-wrapper .text-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+}
+.number {
+  text-align: center;
+  color: var(--link-Color);
+  font-size: 2rem;
+}
+.text {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+.text,
+.number {
+  font-family: var(--font-family);
+  font-weight: var(--button-font-weight);
+}
+.circle {
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  border-radius: 50%;
+  background: rgb(233, 233, 233);
+}
+.circle img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.fa-solid.fa-chevron-right {
+  color: rgb(179, 179, 179);
+}
+.about {
+  padding-top: 10.438rem;
+  padding-bottom: 7.938rem;
+  display: flex;
+  column-gap: 4.25rem;
+}
+.about .text-wrapper {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  row-gap: 1.875rem;
+}
+.info {
+  padding: 0.375rem 1.563rem 0.375rem 1.563rem;
+  background: rgba(255, 255, 255, 0.08);
+  font-family: var(--nav-font-family);
+  font-size: 1.25rem;
+  font-weight: var(--nav-font-weight);
+  color: var(--link-Color);
+  text-transform: uppercase;
+  border: none;
+}
+.text-wrapper .hire {
+  margin-top: 1.5rem;
+  padding: 0.75rem 2.438rem 0.75rem 2.438rem;
+  border: none;
+  font-size: 1.125rem;
+}
+.about h2 {
+  font-size: 3rem;
+  color: var(--text-color);
+}
+.about p {
+  font-family: var(--nav-font-family);
+  font-size: var(--main-font-size);
+  font-weight: var(--font-weight);
+  color: rgb(213, 213, 213);
+  line-height: 1.5;
+}
