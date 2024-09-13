@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+}
+.container {
+  width: 96%;
+  margin: 0 auto;
+  padding: 5.125rem 10.5rem 6.438rem 10.563rem;
+  background: rgb(247, 250, 252);
+}
+.header {
+  text-align: center;
+}
+.header h1,
+.header h4 {
+  font-weight: 700;
+  color: rgb(45, 55, 72);
+}
+.header h1 {
+  font-size: 2.5rem;
+}
+.header p {
+  padding-top: 3.5rem;
+  color: rgb(74, 85, 104);
+  text-align: left;
+}
+.border {
+  margin-top: 2.281rem;
+  border: 0.063rem solid rgb(203, 213, 224);
+}
+.cards-wrapper {
+  padding-top: 6.063rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.card {
+  background: rgb(255, 255, 255);
+  flex-basis: 32%;
+  transition: all 1s;
+}
+.content-wrapper {
+  padding: 1.75rem 1.5rem 0;
+}
+.card h2 {
+  margin: 0;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: rgb(45, 55, 72);
+  text-align: left;
+}
+.price {
+  margin: 0;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  font-size: 3.125rem;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.card:nth-child(2) .price {
+  padding-top: 2.563rem;
+  padding-bottom: 2.125rem;
+}
+.card p {
+  margin: 0;
+  line-height: 1.188rem;
+  color: rgb(74, 85, 104);
+}
+.card:nth-child(1) p {
+  padding-bottom: 2.75rem;
+}
+.card:nth-child(2) p {
+  padding-bottom: 2.125rem;
+}
+.card:nth-child(3) p {
+  padding-bottom: 2.25rem;
+}
+ul li {
+  font-weight: 700;
+  line-height: 2.125rem;
+  white-space: nowrap;
+  color: rgb(0, 0, 0);
+}
+ul li::before {
+  content: "";
+  display: inline-block;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background-color: rgb(203, 213, 224);
+  margin-right: 1.125rem;
+}
+ul li:hover::before {
+  background-color: rgb(45, 55, 72);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+.card:nth-child(1) ul {
+  padding-bottom: 2.842rem;
+}
+.card:nth-child(2) ul {
+  padding-bottom: 3.313rem;
+}
+.card:nth-child(3) ul {
+  padding-bottom: 3.343rem;
+}
+button {
+  width: 100%;
+  padding: 1.563rem 5.813rem 1.563rem 5.875rem;
+  background: rgb(237, 242, 247);
+  text-align: left;
+  font-weight: 700;
+  color: rgb(45, 55, 72);
+  border: none;
+  white-space: nowrap;
+  box-shadow: 2px 3px 6px 1px rgb(203, 213, 224);
+}
+.card.active {
+  transform: translateY(-2.563rem);
+}
+button.active {
+  background: rgb(234, 7, 116);
+  color: rgb(247, 250, 252);
+}
+.card:hover button {
+  background: rgb(234, 7, 116);
+  color: rgb(247, 250, 252);
+}
+.card:hover {
+  transform: translateY(-2.563rem);
+}
+@media (max-width: 1294px) {
+  .container {
+    padding-right: 5.25rem;
+    padding-left: 5.281rem;
+  }
+}
+@media (max-width: 1110px) {
+  .cards-wrapper {
+    flex-direction: column;
+    row-gap: 4rem;
+  }
+  .card {
+    width: 50%;
+  }
+  button {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    width: 70%;
+  }
+}
+@media (max-width: 592px) {
+  .card {
+    width: 100%;
+  }
+}
+@media (max-width: 440px) {
+  ul {
+    padding-left: 0;
+  }
+  button {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .container {
+    padding-right: 2.625rem;
+    padding-left: 2.625rem;
+  }
+}
+@media (max-width: 314px) {
+  .content-wrapper {
+    padding: 0;
+  }
+  ul li {
+    white-space: wrap;
+  }
+}
