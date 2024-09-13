@@ -8,6 +8,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   font-style: normal;
+  background: rgb(247, 250, 252);
 }
 .container {
   width: 96%;
@@ -105,20 +106,14 @@ ul {
   list-style-type: none;
   margin: 0;
 }
-.card:nth-child(1) ul {
-  padding-bottom: 2.842rem;
-}
-.card:nth-child(2) ul {
-  padding-bottom: 3.313rem;
-}
-.card:nth-child(3) ul {
-  padding-bottom: 3.343rem;
+.card ul {
+  padding-bottom: 3.166rem;
 }
 button {
   width: 100%;
   padding: 1.563rem 5.813rem 1.563rem 5.875rem;
   background: rgb(237, 242, 247);
-  text-align: left;
+  text-align: center;
   font-weight: 700;
   color: rgb(45, 55, 72);
   border: none;
@@ -148,7 +143,8 @@ button.active {
 @media (max-width: 1110px) {
   .cards-wrapper {
     flex-direction: column;
-    row-gap: 4rem;
+    row-gap: 6rem;
+    align-items: center;
   }
   .card {
     width: 50%;
@@ -157,9 +153,14 @@ button.active {
     text-align: center;
   }
 }
+@media (max-width: 830px) {
+  .card {
+    width: 60%;
+  }
+}
 @media (max-width: 768px) {
   .card {
-    width: 70%;
+    width: 80%;
   }
 }
 @media (max-width: 592px) {
