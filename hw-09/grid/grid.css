@@ -4,9 +4,34 @@
   background: rgb(33, 37, 41);
   display: grid;
   grid-template-columns: repeat(3, fit-content(100%));
+  grid-template-rows: repeat(3, 33%);
   justify-items: center;
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
+  grid-row-gap: 0.5rem;
+}
+.picture-wrapper:nth-child(1) {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.picture-wrapper:nth-child(2) {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.picture-wrapper:nth-child(3) {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.picture-wrapper:nth-child(4) {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.picture-wrapper:nth-child(5) {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  align-self: end;
+}
+.picture-wrapper:nth-child(6) {
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 .picture-wrapper {
   width: 60%;
