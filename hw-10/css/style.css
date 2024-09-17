@@ -11,19 +11,21 @@
   margin-bottom: 0;
 }
 .my-title {
-  font-family: "Yu Gothic Regular";
+  /* font-family: "Yu Gothic Regular"; */
   font-weight: 400;
   font-size: 1.875rem;
 }
 .nav-link.changed {
-  font-family: "Yu Gothic Regular";
+  /* font-family: "Yu Gothic Regular"; */
   font-weight: 500;
   font-size: 1.125rem;
 }
-
-.section1 .row {
+.section-1 .row {
   background-image: url(../img/coffee-bg.png);
   background-position: center;
+}
+.section-1 .row,
+.section-3 .row {
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
@@ -37,33 +39,35 @@
   padding-top: 10.688rem;
   /* padding-bottom: 10.75rem; */
 }
-.sec2-heading {
+.heading {
   font-family: "Shadows Into Light", cursive;
   font-weight: 400;
   font-style: normal;
 }
-.sec2-subheading {
-  padding-bottom: 2.625rem;
+.subheading {
   font-family: "Yu Gothic Regular";
   font-weight: 500;
 }
-.img-wrapper,
-.bg-image {
+.section-2 .subheading {
+  padding-bottom: 2.625rem;
+}
+.img-wrapper {
   width: 25%;
 }
-
 .rounded-circle.styled {
   border: 5px solid #81613b;
   width: 100%;
 }
 .mask {
-  margin-top: -70px;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  padding: 0.5rem 6.625rem 3.313rem;
 }
 .menu-text {
   font-family: "Yu Gothic Regular";
   font-weight: 400;
   font-size: 1.25rem;
-  padding-bottom: 2.375rem;
 }
 .btn-success::after {
   content: "❯";
@@ -75,5 +79,43 @@
   background-color: rgb(102, 142, 104);
   padding: 0.438rem 2.125rem 0.563rem;
   border-radius: 1.25rem;
+}
+.section-2 .btn.styled {
   margin-top: 2.438rem;
+}
+.section-3 {
+  padding-top: 3.875rem;
+}
+.section-3 .row {
+  background-image: url(../img/cafe.png);
+  background-position: bottom center;
+}
+.section-3 .heading {
+  padding-top: 3.75rem;
+}
+.about {
+  font-family: "Yu Gothic Regular";
+  font-size: 1.25rem;
+  padding-top: 2rem;
+}
+/* .section-3 .btn.styled {
+  margin-top: 3.75rem;
+} */
+.section-4 {
+  padding-top: 5.188rem;
+}
+
+.news-block {
+  padding-top: 4.063rem;
+  padding-bottom: 5.25rem;
+  max-width: 60%;
+}
+.footer {
+  padding-top: 1.25rem;
+}
+.contacs {
+  padding-bottom: 5.25rem;
+}
+.top-link {
+  padding-bottom: 1.313rem;
 }
