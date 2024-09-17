@@ -140,10 +140,19 @@ h4 span {
   padding-bottom: 2.75rem;
   margin: 0;
 }
+@media (max-width: 847px) {
+  .subheading h3 {
+    line-height: 1.5;
+  }
+}
 @media (max-width: 450px) {
   .m-content {
     padding-top: 2rem;
   }
+  .subheading h3 {
+    display: flex;
+  }
+  .subheading h3,
   .d-heading {
     flex-direction: column;
     row-gap: 30px;
