@@ -14,32 +14,47 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- header -->
-    <div class="container-fluid my-container">
-      <header class="my-header d-flex flex-wrap py-2 border-bottom">
-        <a
-          href="/"
-          class="d-flex align-items-center mb-3 mb-md-0 link-body-emphasis text-decoration-none"
-        >
-          <span class="my-title text-white">DesignCafé</span>
-        </a>
-        <!-- navigation -->
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a href="#" class="nav-link changed text-white">DesignCaféとは</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link changed text-white">メニュー</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link changed text-white">お問い合わせ</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link changed text-white">お知らせ</a>
-          </li>
-        </ul>
-      </header>
-    </div>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg py-3">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">DesignCafé</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse d-flex"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item mx-sm-5 ms-lg-5">
+                  <a class="nav-link changed" aria-current="page" href="#"
+                    >DesignCaféとは</a
+                  >
+                </li>
+                <li class="nav-item mx-sm-5 ms-lg-5">
+                  <a class="nav-link changed" href="#">メニュー</a>
+                </li>
+                <li class="nav-item mx-sm-5 ms-lg-5">
+                  <a class="nav-link changed" href="#">お問い合わせ</a>
+                </li>
+                <li class="nav-item mx-sm-5 ms-lg-5">
+                  <a class="nav-link changed" href="#">お知らせ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
     <!-- section-1 -->
     <div class="container-fluid">
       <section class="section-1">
@@ -65,10 +80,11 @@
               >メニュー</a
             >
           </h5>
-          <div class="col"></div>
-          <div class="col-10 d-flex justify-content-evenly flex-wrap">
+        </div>
+        <div class="row d-flex">
+          <div class="col-lg-4 d-flex justify-content-center mb-4">
             <!-- 1-item -->
-            <div class="img-wrapper position-relative">
+            <div class="img-wrapper position-relative overflow-hidden">
               <a href="#"
                 ><img
                   src="img/drinks.png"
@@ -83,8 +99,10 @@
                 </div>
               </a>
             </div>
-            <!-- 2-item -->
-            <div class="img-wrapper position-relative">
+          </div>
+          <!-- 2-item -->
+          <div class="col-lg-4 d-flex justify-content-center mb-4">
+            <div class="img-wrapper position-relative overflow-hidden">
               <a href="#"
                 ><img
                   src="img/cakes.png"
@@ -99,8 +117,10 @@
                 </div>
               </a>
             </div>
-            <!-- 3-item -->
-            <div class="img-wrapper position-relative">
+          </div>
+          <!-- 3-item -->
+          <div class="col-lg-4 d-flex justify-content-center mb-4">
+            <div class="img-wrapper position-relative overflow-hidden">
               <a href="#" class="menu-link text-decoration-none">
                 <img
                   src="img/food.png"
@@ -116,12 +136,11 @@
               </a>
             </div>
           </div>
-          <div class="col"></div>
-          <div class="info-btn">
-            <button type="button" class="btn btn-success styled">
-              詳しく見る
-            </button>
-          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <button type="button" class="btn btn-success styled">
+            詳しく見る
+          </button>
         </div>
       </section>
     </div>
@@ -220,22 +239,22 @@
     <!-- footer -->
     <div class="container-fluid" style="background: rgb(0, 0, 0)">
       <footer class="footer text-white">
-        <div class="row">
-          <div class="col"></div>
-          <div class="col-10 d-flex justify-content-around flex-wrap">
-            <ul class="contacs text-start">
+        <div
+          class="row d-flex justify-content-end flex-wrap text-sm-center text-lg-start"
+        >
+          <div class="col-lg-5">
+            <ul class="contacs">
               <li class="contacts-item list-unstyled">東京都港区赤坂xx-xx</li>
               <li class="contacts-item list-unstyled">(03) 9999-9999</li>
               <li class="contacts-item list-unstyled">
                 contact@designcafe.com
               </li>
             </ul>
-            <p class="copyright text-start">
-              (c) 2022 DesignCafé. All rights reserved.
-            </p>
           </div>
-
-          <div class="col d-flex justify-content-center align-items-end">
+          <div class="col-lg-4">
+            <p class="copyright">(c) 2022 DesignCafé. All rights reserved.</p>
+          </div>
+          <div class="col-lg-1 align-self-end d-flex justify-content-center">
             <a href="#top" class="top-link"
               ><img src="img/topper.svg" alt="topper-button"
             /></a>

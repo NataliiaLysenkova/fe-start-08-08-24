@@ -3,22 +3,30 @@
   font-family: "Yu Gothic Regular";
   src: url(../fonts/yu-gothic-regular.woff2);
 }
-.container-fluid.my-container {
+.header {
   background-color: rgb(102, 142, 104);
 }
-.my-header.d-flex {
-  justify-content: space-around;
-  margin-bottom: 0;
-}
-.my-title {
-  /* font-family: "Yu Gothic Regular"; */
+.navbar-brand {
+  font-family: "Yu Gothic Regular";
   font-weight: 400;
   font-size: 1.875rem;
 }
 .nav-link.changed {
-  /* font-family: "Yu Gothic Regular"; */
+  font-family: "Yu Gothic Regular";
   font-weight: 500;
   font-size: 1.125rem;
+  color: rgb(255, 255, 255);
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .section-1 .row {
   background-image: url(../img/coffee-bg.png);
@@ -36,8 +44,8 @@
   font-style: normal;
   /* font-size: 6.875rem; */
   font-size: 4.688rem;
-  padding-top: 10.688rem;
-  /* padding-bottom: 10.75rem; */
+  transform: translate(0, 50%);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 .heading {
   font-family: "Shadows Into Light", cursive;
@@ -52,17 +60,19 @@
   padding-bottom: 2.625rem;
 }
 .img-wrapper {
-  width: 25%;
+  width: 80%;
+  border: 9px solid #81613b;
+  border-radius: 50%;
 }
 .rounded-circle.styled {
-  border: 5px solid #81613b;
   width: 100%;
 }
 .mask {
-  bottom: -10%;
+  width: 100%;
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, 0%);
-  padding: 0.5rem 6.625rem 3.313rem;
+  padding: 1.44rem 0 2.38rem;
 }
 .menu-text {
   font-family: "Yu Gothic Regular";
@@ -82,6 +92,7 @@
 }
 .section-2 .btn.styled {
   margin-top: 2.438rem;
+  width: fit-content;
 }
 .section-3 {
   padding-top: 3.875rem;
@@ -118,4 +129,17 @@
 }
 .top-link {
   padding-bottom: 1.313rem;
+}
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+    justify-content: end;
+    background-color: rgb(255, 255, 255);
+  }
+  .nav-link.changed {
+    color: rgb(102, 142, 104);
+  }
 }
