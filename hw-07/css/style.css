@@ -313,6 +313,9 @@ h4 span {
     align-self: center;
     width: 60%;
   }
+  .m-wrapper {
+    flex-direction: column;
+  }
   .poster {
     width: 60%;
   }
