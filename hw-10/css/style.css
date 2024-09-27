@@ -3,14 +3,21 @@
   font-family: "Yu Gothic";
   src: url(../fonts/yu-gothic-regular.woff2);
 }
+@font-face {
+  font-family: "Georgia";
+  src: url(../fonts/Georgia.woff2);
+}
 :root {
   --main--font-family: "Yu Gothic";
+  --heading--font--family: "Shadows Into Light", cursive;
+  --text--font--family: "Georgia";
 }
 .header {
   background-color: rgb(102, 142, 104);
 }
 .navbar-brand {
   font-family: var(--main--font-family);
+  font-family: var(--text--font--family);
   font-size: 2.75rem;
 }
 .nav-link.changed {
@@ -42,12 +49,12 @@
   height: inherit;
 }
 .main-heading {
-  font-family: "Shadows Into Light", cursive;
+  font-family: var(--heading--font--family);
   font-size: 6.875rem;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 .heading {
-  font-family: "Shadows Into Light", cursive;
+  font-family: var(--heading--font--family);
 }
 .subheading {
   font-family: var(--main--font-family);
@@ -75,7 +82,7 @@
   padding: 1.44rem 0 2.38rem;
 }
 .menu-text {
-  font-family: var(--main--font-family);
+  font-family: var(--text--font--family);
   font-size: 1.625rem;
 }
 .btn-success::after {
@@ -93,18 +100,18 @@
   width: fit-content;
 }
 .section-3 {
-  padding-top: 3.5rem;
+  /* padding-top: 3.5rem; */
+  padding-top: 2.7rem;
 }
 .section-3 {
   background-image: url(../img/cafe.png);
-  background-position: bottom center;
+  /* background-position: bottom center; */
+  background-position: 50% 80%;
 }
-.section-3 .heading {
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
-}
+.section-3 .heading,
 .section-3 .subheading,
 .about {
-  text-shadow: 2px 2px 2px #000000b2;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
 }
 .about {
   font-family: var(--main--font-family);
@@ -124,6 +131,10 @@
 }
 .contacs {
   padding-bottom: 5.25rem;
+  font-family: var(--main--font-family);
+}
+.copyright {
+  font-family: var(--text--font--family);
 }
 .topper {
   position: absolute;
@@ -153,7 +164,8 @@
     width: auto;
   }
   .section-3 {
-    padding-top: 8.625rem;
+    /* padding-top: 8.625rem; */
+    padding-top: 6rem;
   }
   .section-3 .heading {
     padding-bottom: 3rem;
@@ -175,9 +187,7 @@
     margin-bottom: 70px;
   }
   .topper {
-    /* right: 0; */
     left: 0;
-    /* margin: auto; */
     text-align: center;
   }
 }
