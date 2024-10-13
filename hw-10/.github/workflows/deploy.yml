@@ -1,0 +1,22 @@
+name: Deploy Deploy_Folder to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master # або інша гілка, з якої ви хочете деплоїти
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Deploy deploy_folder to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: deploy_folder # Вкажіть вашу папку для деплою
+          # publish_branch: gh-pages  # За замовчуванням використовує gh-pages
+          # можете додатково налаштувати параметри, якщо потрібно
