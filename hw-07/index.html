@@ -16,7 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="libs/fontawesome/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -24,36 +27,42 @@
       <header class="header">
         <div class="logo-wrapper">
           <div class="h-logo">
-            <a href="#"><img src="img/netflix-logo.svg" alt="logo" /></a>
+            <a href="https://www.netflix.com/ua-en/" target="_blank"
+              ><img src="img/netflix-logo.svg" alt="logo"
+            /></a>
           </div>
-          <p>Friday July 8th</p>
+          <span class="spacer">|</span>
+          <p class="current-date">
+            <!-- current date is generated with JS -->
+          </p>
         </div>
         <div class="icons-wrapper">
           <!-- 1 variant -->
           <!-- <div class="search">
-            <a href="#">
+            <a href="https://www.netflix.com/ua-en/browse/genre/34399" target="_blank">
               <img src="img/fe-search.svg" alt="search-icon" />
             </a>
           </div> -->
           <!-- 2 variant -->
-          <a href="#">
+          <a
+            href="https://www.netflix.com/tudum/top10/most-popular?week=2023-10-29/"
+            target="_blank"
+          >
             <i
               class="fa-solid fa-magnifying-glass fa-flip"
               style="--fa-animation-duration: 10s"
             ></i
           ></a>
           <div class="avatar">
-            <a href="#"><img src="img/avatar.png" alt="avatar-icon" /></a>
+            <a href="https://about.netflix.com/en/newsroom" target="_blank"
+              ><img src="img/avatar.png" alt="avatar-icon"
+            /></a>
           </div>
         </div>
       </header>
       <article class="m-content">
         <section class="subheading">
-          <h3>
-            <a href="#">Drama <span>|</span></a>
-            <a href="#">Thriller <span>|</span></a>
-            <a href="#">Supernatural</a>
-          </h3>
+          <h3 id="genre-list"></h3>
         </section>
         <section class="heading">
           <h1>Stranger Things</h1>
@@ -72,62 +81,90 @@
         </section>
         <section class="rate">
           <div class="star-wrapper">
-            <img src="img/star-icon.svg" alt="star-icon" />
-            <img src="img/star-icon.svg" alt="star-icon" />
-            <img src="img/star-icon.svg" alt="star-icon" />
-            <img src="img/clear-star-icon.svg" alt="clear-star-icon" />
-            <img src="img/clear-star-icon.svg" alt="clear-star-icon" />
+            <!-- first -->
+            <div class="star" onclick="setRating(1)">
+              <svg viewBox="0 0 24 24">
+                <polygon
+                  points="12,2 15,8 22,9 17,14 18,21 12,18 6,21 7,14 2,9 9,8"
+                />
+              </svg>
+            </div>
+            <!-- second -->
+            <div class="star" onclick="setRating(2)">
+              <svg viewBox="0 0 24 24">
+                <polygon
+                  points="12,2 15,8 22,9 17,14 18,21 12,18 6,21 7,14 2,9 9,8"
+                />
+              </svg>
+            </div>
+            <!-- third -->
+            <div class="star" onclick="setRating(3)">
+              <svg viewBox="0 0 24 24">
+                <polygon
+                  points="12,2 15,8 22,9 17,14 18,21 12,18 6,21 7,14 2,9 9,8"
+                />
+              </svg>
+            </div>
+            <!-- fourth -->
+            <div class="star" onclick="setRating(4)">
+              <svg viewBox="0 0 24 24">
+                <polygon
+                  points="12,2 15,8 22,9 17,14 18,21 12,18 6,21 7,14 2,9 9,8"
+                />
+              </svg>
+            </div>
+            <!-- fifth -->
+            <div class="star" onclick="setRating(5)">
+              <svg viewBox="0 0 24 24">
+                <polygon
+                  points="12,2 15,8 22,9 17,14 18,21 12,18 6,21 7,14 2,9 9,8"
+                />
+              </svg>
+            </div>
           </div>
         </section>
         <section class="links">
           <div class="links-wrapper">
             <button class="b-link">
-              <a href="#"
+              <a
+                href="https://www.netflix.com/ua-en/title/80057281"
+                target="_target"
                 >STREAM NOW
                 <div class="circle">
                   <div class="triangle"></div>
                 </div>
               </a>
             </button>
-            <button class="b-link"><a href="#">ALL EPISODES</a></button>
+            <button class="b-link">
+              <a
+                href="https://www.netflix.com/ua-en/title/80057281"
+                target="_target"
+              >
+                ALL EPISODES</a
+              >
+            </button>
           </div>
         </section>
         <section class="movies">
           <div class="m-heading">
             <h4>POPULAR THIS WEEK</h4>
             <div class="c-wrapper">
-              <a href="#"
-                ><div class="controls">
-                  <i
-                    class="fa-solid fa-chevron-left fa-fade"
-                    style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6"
-                  ></i></div
-              ></a>
-              <a href="#"
-                ><div class="controls active">
-                  <i
-                    class="fa-solid fa-chevron-right fa-fade"
-                    style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6"
-                  ></i></div
-              ></a>
+              <button class="control left">
+                <i
+                  class="fa-solid fa-chevron-left fa-fade"
+                  style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6"
+                ></i>
+              </button>
+              <button class="control right active">
+                <i
+                  class="fa-solid fa-chevron-right fa-fade"
+                  style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6"
+                ></i>
+              </button>
             </div>
           </div>
           <div class="m-wrapper">
-            <div class="poster">
-              <a href="#"><img src="img/poster-1.png" alt="movie-poster" /></a>
-            </div>
-            <div class="poster">
-              <a href="#"><img src="img/poster-2.png" alt="movie-poster" /></a>
-            </div>
-            <div class="poster">
-              <a href="#"><img src="img/poster-3.png" alt="movie-poster" /></a>
-            </div>
-            <div class="poster">
-              <a href="#"><img src="img/poster-4.png" alt="movie-poster" /></a>
-            </div>
-            <div class="poster">
-              <a href="#"><img src="img/poster-5.png" alt="movie-poster" /></a>
-            </div>
+            <!-- Images added dynamically with JS -->
           </div>
         </section>
       </article>
@@ -136,5 +173,7 @@
         <p>16+</p>
       </div>
     </main>
+    <script src="script/main.js"></script>
+    <script src="script/slider.js"></script>
   </body>
 </html>
